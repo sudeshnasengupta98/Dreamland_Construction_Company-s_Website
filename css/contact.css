@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    font-family: 'roboto',sans-serif;
+}
+body{
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+:root{
+    --orangered:#ffa500;
+    --royalblue:#04233b;
+    --black:#000000;
+    --transblack:#000000a9;
+    --offblack:#52504E;
+    --blue:#155892;
+    --lighblue:#8696dd61;
+    --white:#FFFF;
+    --transwhite:#ffffffc2;
+    --lightaqua:#1c4e4e2c;
+    --green-light:#5fd172;
+}
+.com-gap{
+    padding: 100px 0;
+}
+a{
+    text-decoration: none;
+}
+.active{
+    text-transform: lowercase;
+}
+li{
+    list-style: none;
+}
+.cmn-btn{
+    padding: 15px 22px;
+    display: inline-block;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+   overflow: hidden;
+   transition: all 0.3s ease;
+    background: linear-gradient(var(--orangered) 0 0) no-repeat calc(200% - var(--p, 0%))
+      100% / 200% var(--p, 0.2em);
+    transition: 0.3s var(--t, 0s),
+      background-position 0.3s calc(0.3s - var(--t, 0s));
+  }
+  
+  .cmn-btn:hover {
+    --p: 100%;
+    --t: 0.3s;
+  }
+.btn-one{
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    background: linear-gradient(var(--blue) 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+.btn-one:hover {
+    --p: 100%;
+    --t: 0.3s;
+    color: var(--white);
+  }
+
+img{
+    max-width: 100%;
+}
+section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.highlight{
+    color: var(--orangered);
+    font-weight: 800;
+}
+.highlight-one{
+    color: var(--blue);
+    font-weight:800 ;
+}
+h1, .heading-1{
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+    text-shadow: 2px 2px #000000;
+    text-transform: uppercase;
+}
+h2, .heading-2{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px #000000;
+    text-transform: capitalize;
+}
+h3, .heading-3{
+    font-size: 34px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+h4, .heading-4{
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0 0 14px 0;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+h5, .heading-5{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+h6, .heading-6{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 0 15px 0;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+/* ------------------top header starts---------------*/
+.top-header-section{
+    padding: 10px 0;
+    background-color: var(--black);
+}
+.contact-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-links li{
+    margin: 0 8px ;
+}
+.contact-links a{
+    font-size: 14px;
+    color: var(--white);
+}
+.contact-links a:hover{
+    color: var(--blue);
+}
+/* ------------------top header ends-----------------*/
+/*--------------------nav bar starts----------------*/
+.header-section{
+    background-image: linear-gradient(#364657, #323c5a);
+    padding: 20px 0;
+}
+#first-links{
+    color: var(--orangered);
+}
+.logo {
+    width: 180px;
+    display: block;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.nav-links li{
+    margin: 0 20px;
+}
+.nav-links a{
+    display: inline-block;            
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--white);
+}
+.nav-links a:hover{
+    color: var(--orangered);
+}
+/*--------------------nav bar ends-----------------*/
+
+/*--------------------banner section starts-----------------*/
+.banner-section{
+    background-image: url(../image/contactbackground-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    min-height: 80vh;
+    padding: 60px 0;
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h1{
+    color: var(--white);
+}
+.banner-text p{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+/*--------------------banner section ends------------------*/
+/*--------------------contact section starts------------------*/
+.contact-section{
+    background-image: linear-gradient(#159957be, #155799dc);
+}
+.contact-child{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.left-child, .right-child{
+    width: 50%;
+    padding: 0 15px;
+}
+.contact-header{
+    text-align: center;
+}
+.right-child input::placeholder{
+    font-size: 16px;
+    padding-left: 8px;
+}
+.inner-content{
+    background-color: var(--transblack);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 152px 30px;
+}
+.inner-content h3{
+    color: var(--white);
+}
+.inner-content p{
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.address-links li{
+   margin-bottom: 25px;
+}
+.address-links a{
+   font-size: 15px;
+   color: var(--white);
+}
+#active{
+    text-transform: capitalize;
+}
+form{
+    display: flex;
+    flex-direction:column;
+    padding: 20px 20px;
+    background-color: var(--transwhite);
+}
+textarea{
+    margin-bottom:30px ;
+    
+}
+textarea::placeholder{
+     font-size: 16px;
+     padding-left: 8px;
+     font-family: 'roboto',sans-serif;
+}
+.right-child input{
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+.left-contact input{
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+/*--------------------contact section ends-------------------*/
+
+/*--------------------footer section starts--------------------*/
+.footer-section {
+    background-color: var(--transblack);
+    background-blend-mode: overlay;
+    background-image: url(../image/footer-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 100px 0;
+}
+.footer-section-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.social-links-one{
+    display: flex;
+}
+.social-links-one i{
+    font-size: 25px;
+    color: var(--white);
+}
+.social-links-one i:hover{
+    color: var(--orangered);
+}
+.social-links-one a{
+    margin: 0 10px;
+}
+.footer-links a{
+    margin-bottom: 18px;
+    color: var(--white);
+    font-size: 15px;
+    display: block;
+    text-transform: capitalize;
+}
+.footer-links a:hover{
+    color: var(--orangered);
+}
+.footer-one p{
+      color: var(--white);
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 400;
+      margin-bottom: 30px;
+}
+.footer-head{
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: var(--orangered);
+}
+.footer-one{
+    padding: 20px;
+    width: 25%;
+}
+#active{
+    text-transform: lowercase;
+}
+.logo-one{
+    display: block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+/*--------------------footer section ends---------------------*/
+/*--------------------copyright section ends---------------------*/
+ .bottom-footer p{
+     color: white;
+     font-size: 14px;
+     padding: 15px 0;
+     text-align: center;
+ }
+ .bottom-footer{
+     background-color: #0f0f0fe5;
+ }
+
+/*--------------------copyright section ends---------------------*/
+
+
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+    /*--------------------top header starts---------------------*/
+    .contact-links a{
+       font-size: 12px;
+    }
+    /*--------------------top header ends---------------------*/
+    /*--------------------nav bar starts---------------------*/
+    .nav{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav-links li{
+        margin-bottom:20px;
+    }
+    .nav-links{
+        max-width: 112px;
+    }
+    .nav-links a{
+        font-size: 12px;
+    }
+    nav .cmn-btn{
+        padding: 12px 18px;
+        font-size: 12px;
+    }
+/*--------------------nav bar ends---------------------*/
+
+/*--------------------banner section starts---------------------*/
+.banner-section{
+    min-height: 30vh;
+    padding: 40px 0;
+}
+.banner-text h1{
+    font-size: 27px;
+}
+.banner-text p{
+    font-size: 14px;
+}
+.banner-text .cmn-btn{
+    padding: 12px 18px;
+    font-size: 12px;
+}
+/*--------------------banner section ends---------------------*/
+
+/*--------------------contact section starts----------------------*/
+.left-child, .right-child{
+    width: 100%;
+}
+.left-child{
+    margin-bottom: 20px;
+}
+.contact-header h2{
+    font-size: 25px;
+}
+.contact-section{
+    padding: 50px 0;
+}
+.inner-content h3{
+    font-size: 18px;
+}
+.inner-content p{
+    font-size: 12px;
+}
+/*--------------------contact section ends----------------------*/
+/*--------------------footer section starts---------------------*/
+.num-one, .num-two, .num-three, .num-four{
+    width: 100%;
+}
+.num-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section-child{
+    justify-content: space-between;
+    text-align: center;
+}
+.footer-section{
+    padding: 50px 0;
+}
+.footer-one p{
+font-size: 12px;
+}
+.social-links-one i {
+    font-size: 22px;
+}
+.footer-head{
+    font-size: 14px ;
+}
+.footer-links a{
+    font-size: 12px;
+}
+/*--------------------footer section ends-----------------------*/
+/*--------------------copyright section starts-----------------------*/
+.bottom-footer p{
+    font-size: 12px;
+}
+/*--------------------copyright section endss-----------------------*/
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+/*--------------------nav bar starts---------------------*/
+.nav{
+    justify-content: center;
+     flex-direction: column;
+}
+.nav-links li{
+     margin-bottom:20px;
+}
+.nav-links{
+    max-width: 179px;
+}
+nav .cmn-btn{
+    padding: 12px 18px;
+    font-size: 12px;
+}
+/*--------------------nav bar ends---------------------*/
+
+/*--------------------banner section starts---------------------*/
+.banner-section{
+    min-height: 30vh;
+    padding: 40px 0;
+}
+.banner-text h1{
+    font-size: 38px;
+}
+.banner-text p{
+    font-size: 14px;
+}
+.banner-text .cmn-btn{
+    padding: 12px 18px;
+    font-size: 12px;
+}
+/*--------------------banner section ends---------------------*/
+
+/*--------------------contact section starts----------------------*/
+.left-child, .right-child{
+    width: 100%;
+}
+.left-child{
+    margin-bottom: 20px;
+}
+.contact-header h2{
+    font-size: 35px;
+}
+.contact-section{
+    padding: 50px 0;
+}
+.inner-content h3{
+    font-size: 28px;
+}
+/*--------------------contact section ends----------------------*/
+/*--------------------footer section starts---------------------*/
+.num-one, .num-two, .num-three, .num-four{
+    width: 100%;
+}
+.num-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section-child{
+    justify-content: space-between;
+    text-align: center;
+}
+.footer-section{
+    padding: 50px 0;
+}
+/*--------------------footer section ends-----------------------*/
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+/*--------------------nav bar starts---------------------*/
+.nav{
+    justify-content: center;
+    flex-direction: column;
+}
+.nav-links li{
+    margin-bottom:20px;
+}
+.nav-links{
+    max-width: 230px;
+}   
+nav .cmn-btn{
+    padding: 12px 18px;
+    font-size: 12px;
+}
+/*--------------------nav bar ends----------------------*/
+
+/*--------------------banner section starts----------------------*/
+.banner-section{
+    min-height: 40vh;
+    padding: 50px 0;
+}
+.banner-text h1{
+    font-size: 45px;
+}
+.banner-text p{
+    font-size: 14px;
+}
+.banner-text .cmn-btn{
+    padding: 12px 18px;
+    font-size: 12px;
+}
+/*--------------------banner section ends----------------------*/
+/*--------------------contact section starts----------------------*/
+.left-child, .right-child{
+    width: 100%;
+}
+.left-child{
+    margin-bottom: 20px;
+}
+.contact-header h2{
+    font-size: 40px;
+}
+.contact-section{
+    padding: 60px 0;
+}
+/*--------------------contact section ends----------------------*/
+/*--------------------footer section starts---------------------*/
+.num-one, .num-two, .num-three, .num-four{
+    width: 50%;
+}
+.num-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section-child{
+    justify-content: space-between;
+    text-align: center;
+}
+.footer-section{
+    padding: 60px 0;
+}
+/*--------------------footer section ends---------------------*/
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+/*--------------------nav bar starts---------------------*/
+.nav{
+    justify-content: center;
+    flex-direction: column;
+}
+.nav-links li{
+    margin-bottom:20px;
+}
+/*--------------------nav bar ends----------------------*/
+
+/*--------------------banner section starts----------------------*/
+.banner-section{
+    min-height: 50vh;
+}
+.banner-text h1{
+    font-size: 55px;
+}
+.banner-text p{
+    font-size: 16px;
+}
+/*--------------------banner section ends----------------------*/
+/*--------------------footer section starts---------------------*/
+.num-one, .num-two, .num-three, .num-four{
+    width: 50%;
+}
+.num-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section-child{
+    justify-content: space-between;
+    text-align: center;
+}
+.footer-section{
+    padding: 60px 0;
+}
+/*--------------------footer section ends-----------------------*/
+}
+@media (min-width: 1200px) and (max-width: 1399.98px){
+
+}

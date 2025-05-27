@@ -1,0 +1,1598 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* ---------------------------------------universal--------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    font-family: 'roboto',sans-serif;
+}
+body{
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+:root{
+    --red:#ff0000;
+    --green: #008000;
+    --orangered:#ffa500;
+    --royalblue:#04233b;
+    --black:#000000;
+    --transblack:#000000a9;
+    --offblack:#52504E;
+    --blue:#155892;
+    --lighblue:#8696dd61;
+    --white:#FFFF;
+    --transwhite:#ffffffc2;
+    --lightaqua:#1c4e4e2c;
+    --green-light:#5fd172;
+}
+.com-gap{
+    padding: 100px 0;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+.active{
+    text-transform: lowercase;
+}
+/* --------------------------common button creation------------------------ */
+.cmn-btn{
+    padding: 15px 22px;
+    display: inline-block;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+   overflow: hidden;
+   transition: all 0.3s ease;
+    background: linear-gradient(var(--orangered) 0 0) no-repeat calc(200% - var(--p, 0%))
+      100% / 200% var(--p, 0.2em);
+    transition: 0.3s var(--t, 0s),
+      background-position 0.3s calc(0.3s - var(--t, 0s));
+  }
+  
+  .cmn-btn:hover {
+    --p: 100%;
+    --t: 0.3s;
+  }
+.btn-one{
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    background: linear-gradient(var(--blue) 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+.btn-one:hover {
+    --p: 100%;
+    --t: 0.3s;
+    color: var(--white);
+}
+.highlight{
+    color: var(--orangered);
+    font-weight: 800;
+}
+.highlight-one{
+    color: var(--blue);
+    font-weight:800 ;
+}
+img{
+    max-width: 100%;
+}
+section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1, .heading-1{
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0 0 28px 0;
+    line-height: 1.1;
+    text-shadow: 2px 2px var(--black);
+    text-transform: uppercase;
+}
+h2, .heading-2{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0 0 30px 0;
+    text-shadow: 2px 2px var(--black);
+    text-transform: capitalize;
+}
+h3, .heading-3{
+    font-size: 34px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+h4, .heading-4{
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0 0 14px 0;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+h5, .heading-5{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+h6, .heading-6{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+
+/* ------------------top header starts---------------*/
+.top-header-section{
+    padding: 10px 0;
+    background-color: var(--black);
+}
+.contact-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-links li{
+    margin: 0 8px ;
+}
+.contact-links a{
+    font-size: 14px;
+    color: var(--white);
+}
+.contact-links a:hover{
+    color: var(--blue);
+}
+/* ------------------top header ends-----------------*/
+/*--------------------nav bar starts----------------*/
+.header-section{
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+}
+#first-links{
+    color: var(--orangered);
+}
+.logo {
+    width: 180px;
+    display: block;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.nav-links li{
+    margin: 0 20px;
+}
+.nav-links a{
+    display: block;            
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--white);
+}
+.nav-links a:hover{
+    color: var(--orangered);
+}
+#hambtn{
+    color: var(--white);
+    display: none;
+    font-size: 20px;
+}
+/*--------------------nav bar ends-----------------*/
+
+/*--------------------banner section starts-----------------*/
+.banner-section{
+    background-image: linear-gradient(90deg, #2e2c2b91 40%, #888749a9 80%),
+     url(../image/banner-image-one..jpg);
+     background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    min-height: calc(100vh - 100px);
+    padding: 180px 0 70px 0;
+}
+.banner-para{
+    text-align: center;
+}
+.active-btn{
+    margin-left: 20px;
+}
+.banner-para h1{
+    text-transform: uppercase;
+    color: var(--white);
+}
+.banner-para h2{
+    color: var(--orangered);
+}
+.banner-text{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--white);
+    text-transform: capitalize;
+}
+/*--------------------banner section ends------------------*/
+/*--------------------about section ends------------------*/
+.about-section{
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    align-items: center;
+}
+.left-about, .right-about{
+    width: 50%;
+    padding: 0 15px;
+}
+.right-img figure{
+    height: 100%;
+}
+.right-img img{
+    display: block;
+}
+.right-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: calc(50% - 20px);
+}
+.inner-content p{
+    font-size: 16px;
+    margin-bottom: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+/*--------------------about section ends------------------*/
+/*--------------------service section starts------------------*/
+.service-section{
+    background-image: linear-gradient(90deg, #e2dede 10%, #9bc09ebe 22%, #ecea47bb 78%), 
+    url(../image/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-blend-mode:darken;
+}
+.service-section-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-one{
+    position: relative;
+    background-color: var(--transblack);
+    max-width: 345px;
+    width: 100%;
+    box-shadow: 0 0 20px 2px var(--black);
+    transition: 1s;
+    border: 2px solid var(--transblack);
+}
+.card-one:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.service-header h2{
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 40px;
+}
+.card-img img{
+    display: block;
+}
+.card-img{
+    margin-bottom: 10px;
+}
+.card-para{
+    position: absolute;
+    top: 132px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white);
+}
+.card-para p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-transform:uppercase;
+}
+.card-text{
+    padding: 15px 50px;
+    /* text-align:center; */
+}
+.card-btn-one .cmn-btn{
+    padding: 10px 60px;
+    border-radius: 10px;
+}
+.card-btn-one{
+    text-align: center;
+}
+.service-info ul li{
+    margin-bottom: 15px;
+}
+
+.active-span{
+    margin-left: 20px; 
+    font-size: 15px;
+    color: var(--white);
+}
+.fa-check {
+    color: var(--red);
+    font-size: 20px;
+}
+.fa-xmark {
+    color: var(--green);
+    font-size: 20px;
+}
+/*--------------------service section ends------------------*/
+/*--------------------facility section starts------------------*/
+.facility-section-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.facility-one{
+    max-width: 262px;
+    width: 100%;
+}
+.facility-header{
+    text-align: center;
+}
+.facility-img{
+    margin-bottom: 10px;
+}
+.facility-img img{
+    width: 40%;
+}
+/*--------------------facility section ends------------------*/
+/*--------------------project section starts------------------*/
+.project-section{
+   background-image: linear-gradient(#ada996, #f2f2f2, #dbdbdb, #eaeaea);
+}
+.project-section-child{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.project-header{
+    text-align: center;
+}
+.project-header p{
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 35px;
+    color: var(--black);
+}
+.card-gallery-img{
+    border: 1px solid var(--offblack);
+}
+.card-gallery-img figure{
+    height: 100%;
+}
+.card-gallery-img img{
+    display: block;
+}
+.card-gallery{
+    position: relative;
+    box-shadow: 0 0 20px 2px var(--black);
+    box-shadow: 5px 8px 10px var(--black);
+    transition: 1s;
+}
+.card-gallery:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.para-one{
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.para-two{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
+.para-one h3{
+    color: var(--white);
+    background-color: var(--black);
+    text-transform: uppercase;
+}
+.para-two h4{
+    color: var(--black);
+    text-transform: uppercase;
+    background-color: var(--white);
+}
+/*--------------------project section ends------------------*/
+
+/*--------------------team section starts------------------*/
+.team-section{
+    background-color: var(--royalblue);
+    background-blend-mode:screen;
+    background-image: url(../image/backgroundteam1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: relative;
+}
+.team-header{
+    text-align: center;
+}
+.team-header h2{
+    color: var(--white);
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links li{
+    margin: 0 10px;
+}
+.social-links i{
+    font-size: 25px;
+    color: var(--white);
+    padding: 7px 0;
+}
+.social-links i:hover{
+    text-shadow: 4px 4px 5px var(--black);
+    transition: .7s ease;
+    color: var(--orangered);
+}
+.card-three:hover{
+   cursor: pointer;
+   box-shadow: 10px 10px 30px 2px var(--black);
+   transition: .5s;
+}
+.card-three{
+    text-align: center;
+    padding: 50px 50px;
+    border-radius: 18px;
+    background-image: linear-gradient(#159957be, #155799dc);
+}
+.card-three-image img{
+    padding: 30px 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.team-header p{
+    color: var(--black);
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.card-three-para h3, .card-three-para h4{
+    color: var(--white);
+}
+.left-btn{
+    position: absolute;
+    top: 230px;
+    right: 180px;
+    font-size: 18px;
+    padding: 5px 9px;
+    border-radius: 50%;
+    background-color: var(--orangered);
+}
+.right-btn{
+    position: absolute;
+    top: 230px;
+    right: 130px;
+    font-size: 18px;
+    padding: 5px 9px;
+    border-radius: 50%;
+    background-color: var(--orangered);
+
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/*--------------------team section ends------------------*/
+/*--------------------blog section starts---------------*/
+.blog-section-child{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 50px;
+}
+.blog-header h2{
+    text-align: center;
+}
+.card-txt h3{
+    color: var(--white);
+    margin-bottom: 30px;
+}
+.card-txt p{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 70%;
+}
+.card-four-para{
+    background-color: var(--transblack);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    position: absolute;
+    bottom:0;
+    overflow: hidden;
+    height: 15%;
+    width: 100%;
+}
+.card-four:hover .card-four-para{
+    height: 100%;
+    transition: .9s;
+}
+.card-four{
+    position: relative;
+    cursor: pointer;
+}
+.card-four-img img{
+    display: block;
+}
+ .card-btn i{
+   padding: 10px 10px;
+   border-radius: 50%;
+   background-color: var(--orangered);
+   color: var(--black);
+   font-size: 13px;
+ }
+
+/*--------------------blog section ends----------------*/
+/*--------------------review section starts------------------*/
+.review-section{
+   background-image: linear-gradient(#ada996, #f2f2f2, #dbdbdb, #eaeaea);
+}
+.review-header{
+    text-align: center;
+}
+.review-section-child{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.review-header p{
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.2;
+    color: var(--black);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/*--------------------review section ends--------------------*/
+/*--------------------contact section starts--------------------*/
+.contact-section{
+    background-image: url(../image/contback.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-color: #130e0ed0;
+    background-blend-mode: overlay;
+}
+.contact-header  h2, .contact-header h3{
+    color: var(--white);
+    text-align: center;
+}
+.contact-section-child{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.left-contact, .right-contact{
+    width: 50%;
+    padding: 0 15px;
+}
+form{
+    display: flex;
+    flex-direction:column;
+    padding: 14px 20px;
+    background-color: var(--transwhite);
+}
+.left-contact input{
+    padding: 15px 0;
+    margin-bottom: 24px;
+}
+.left-contact input::placeholder{
+    font-size: 16px;
+    padding-left: 8px;
+}
+textarea{
+    margin-bottom:24px ;
+    
+}
+textarea::placeholder{
+     font-size: 16px;
+     padding:15px 0 15px 8px ;
+     font-family: 'roboto',sans-serif;
+}
+
+/*--------------------contact section ends---------------------*/
+/*--------------------fixed section starts---------------------*/
+.left-fixed i{
+    padding: 9px 9px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: var(--white);
+    background-color: var(--green-light);
+    position: fixed;
+    top: 450px;
+    left: 20px;
+    z-index: 900;
+}
+.right-fixed i{
+    padding: 9px 9px;
+    border-radius: 50%;
+    font-size: 30px;
+    position: fixed;
+    color: #ffffff;
+    top: 450px;
+    right: 20px;
+    background-image:linear-gradient(#515bd4, #b134af, #d02a7b, #feda77, #f58529);
+    z-index: 900;
+    
+}
+/*--------------------fixed section ends---------------------*/
+
+/*--------------------footer section starts--------------------*/
+.footer-section {
+    background-color: var(--transblack);
+    background-blend-mode: overlay;
+    background-image: url(../image/footer-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 100px 0;
+}
+.footer-section-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.social-links-one{
+    display: flex;
+}
+.social-links-one i{
+    font-size: 25px;
+    color: var(--white);
+}
+.social-links-one i:hover{
+    color: var(--orangered);
+}
+.social-links-one a{
+    margin: 0 10px;
+}
+.footer-links a{
+    margin-bottom: 18px;
+    color: var(--white);
+    font-size: 15px;
+    display: block;
+    text-transform: capitalize;
+}
+.footer-links a:hover{
+    color: var(--orangered);
+}
+.footer-one p{
+      color: var(--white);
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 400;
+      margin-bottom: 30px;
+}
+.footer-head{
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: var(--orangered);
+}
+.footer-one{
+    padding: 20px;
+    width: 22%;
+}
+#active{
+    text-transform: lowercase;
+}
+.logo-one{
+    display: block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+/*--------------------footer section ends---------------------*/
+/*--------------------copyright section ends---------------------*/
+ .bottom-footer p{
+     color: var(--white);
+     font-size: 14px;
+     padding: 15px 0;
+     text-align: center;
+ }
+ .bottom-footer{
+     background-color: #0f0f0fe5;
+ }
+
+/*--------------------copyright section ends---------------------*/
+
+
+
+/*--------------------media query---------------------*/
+/*--------------------media query---------------------*/
+/*--------------------media query---------------------*/
+/*--------------------media query---------------------*/
+/*--------------------media query---------------------*/
+/*--------------------media query---------------------*/
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+/*--------------------top header starts---------------------*/
+.contact-links a{
+    font-size: 12px;
+}
+/*--------------------top header ends---------------------*/
+/*--------------------nav bar starts---------------------*/
+#hambtn{
+    display: block;
+}
+.nav-links{
+    display: block;
+    position: absolute;
+    left:0;
+    top:-330px;
+    background: var(--royalblue);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+.nav-links a{
+    margin-bottom: 15px;
+    color: var(--white);
+    font-size: 14px;
+}
+.nav-btn{
+    display: block;
+    position: absolute;
+    left:0;
+    top:-330px;
+    background: var(--royalblue);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ;
+}
+.nav-btn a {
+    margin-bottom: 20px;
+}
+body.show-mobile-menu .nav-links{
+   top:70px;
+}
+body.show-mobile-menu .nav-btn{
+    top:320px;
+ } 
+ .nav-btn .cmn-btn{
+    padding: 12px 18px;
+    font-size: 10px;
+ }
+ .logo{
+    width: 120px;
+ }
+/*--------------------nav bar ends---------------------*/
+/*--------------------banner section starts---------------------*/
+.banner-para h1{
+    font-size: 25px;
+}
+.banner-para h2{
+    font-size: 18px;
+}
+.banner-text{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.banner-btn .cmn-btn{
+    padding:10px 18px ;
+    font-size: 10px;
+}
+.banner-section{
+    display: flex;
+    align-items: center;
+}
+.banner-section{
+    padding: 78px 0 30px 0;
+}
+/*--------------------banner section ends---------------------*/
+
+/*--------------------about section starts---------------------*/
+.right-img{
+    position: relative;
+    width: 100%;
+}
+.left-about, .right-about{
+    width: 100%;
+}
+.left-about{
+    margin-bottom: 40px;
+}
+.inner-content{
+    text-align: center;
+}
+.inner-content h2{
+    font-size: 25px;
+}
+.inner-content p{
+    font-size: 13px;
+}
+.inner-content .cmn-btn{
+    padding:12px 18px ;
+}
+.about-section{
+    padding: 40px 0;
+}
+/*--------------------about section ends---------------------*/
+/*--------------------service section starts---------------------*/
+
+.service-section-child{
+    justify-content: center;
+}
+.service-header h2{
+    font-size: 30px;
+}
+.service-section{
+    padding: 50px 0;
+}
+.card-one{
+    margin-bottom: 40px;
+}
+.card-para p{
+    font-size: 12px;
+}
+.card-para h3{
+    font-size: 20px;
+}
+.card-text{
+    padding: 15px 10px 15px 30px;
+}
+.service-info ul li{
+    margin-bottom: 10px;
+}
+.active-span{
+    font-size: 14px;   
+}
+.card-btn-one .cmn-btn{
+    padding: 10px 30px;
+    font-size: 12px;
+}
+/*--------------------service section ends---------------------*/
+/*--------------------facility section starts---------------------*/
+.facility-section-child{
+    justify-content: center;
+}
+.facility-section{
+    padding: 40px 0;
+}
+.facility-header h2{
+    font-size: 40px;
+}
+/*--------------------facility section ends---------------------*/
+
+/*--------------------project section starts---------------------*/
+.project-section-child{
+    grid-template-columns: repeat(1, 1fr);
+}
+.project-header h2{
+    font-size: 30px;
+}
+.card-gallery-img img{
+   max-height:300px;
+   /* max-width: 100px; */
+}
+.project-section{
+    padding: 40px 0;
+}
+.project-header .cmn-btn{
+    padding: 12px 18px;
+}
+/*--------------------project section ends---------------------*/
+/*--------------------team section starts---------------------*/
+.team-header h2{
+    font-size: 28px;
+}
+.team-header p{
+    font-size: 12px;
+    margin-bottom: 100px 0;
+}
+.card-three{
+    max-width: 300px;
+}
+.right-btn{
+    top: 280px;
+}
+.left-btn{
+    top: 280px;
+}
+/*--------------------team section ends---------------------*/
+/*--------------------blog section starts---------------------*/
+.blog-section-child{
+    grid-template-columns: repeat(1,1fr);
+}
+.blog-header h2{
+    font-size: 25px;
+}
+.card-txt p{
+    font-size: 12px;
+}
+.card-txt h3{
+    font-size: 20px;
+}
+.card-btn i{
+    padding: 5px 5px;
+}
+.card-four-para{
+    height: 18%;
+}
+.blog-section{
+    padding: 50px 0;
+}
+/*--------------------blog section ends---------------------*/
+
+/*--------------------review section starts---------------------*/
+.review-section{
+    padding: 40px 0;
+}
+.review-header h2{
+    font-size: 25px;
+}
+.review-header p{
+    font-size: 12px;
+}
+.review-section-child{
+    grid-template-columns: repeat(1, 1fr);
+}
+/*--------------------review section ends---------------------*/
+/*--------------------contact section starts---------------------*/
+.contact-section{
+    padding: 40px 0;
+}
+.contact-section-child{
+    flex-direction: column;
+    align-items: center;
+}
+.left-contact, .right-contact{
+    width: 100%;
+}
+.left-contact{
+    margin-bottom: 40px;
+}
+.contact-header h2{
+    font-size: 19px;
+}
+.contact-header h3{
+    font-size: 28px;
+}
+/*--------------------contact section ends-----------------------*/
+/*--------------------footer section starts---------------------*/
+.num-one, .num-two, .num-three, .num-four{
+    width: 100%;
+}
+.num-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section-child{
+    justify-content: space-between;
+    text-align: center;
+}
+.footer-section{
+    padding: 50px 0;
+}
+.footer-one p{
+font-size: 12px;
+}
+.social-links-one i {
+    font-size: 22px;
+}
+.footer-head{
+    font-size: 14px ;
+}
+.footer-links a{
+    font-size: 12px;
+}
+/*--------------------footer section ends-----------------------*/
+/*--------------------copyright section starts-----------------------*/
+.bottom-footer p{
+    font-size: 12px;
+}
+/*--------------------copyright section ends-----------------------*/
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+/*--------------------nav bar starts---------------------*/
+#hambtn{
+    display: block;
+}
+.nav-links{
+    display: block;
+    position: absolute;
+    left:0;
+    top:-330px;
+    background: var(--royalblue);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+.nav-links a{
+    margin-bottom: 15px;
+    color: var(--white);
+    font-size: 14px;
+}
+.nav-btn{
+    display: block;
+    position: absolute;
+    left:0;
+    top:-330px;
+    background: var(--royalblue);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ;
+}
+.nav-btn a {
+    margin-bottom: 20px;
+}
+body.show-mobile-menu .nav-links{
+   top:70px;
+}
+body.show-mobile-menu .nav-btn{
+    top:320px;
+ } 
+ .nav-btn .cmn-btn{
+    padding: 12px 18px;
+    font-size: 10px;
+ }
+/*--------------------nav bar ends---------------------*/
+/*--------------------banner section starts---------------------*/
+.banner-para h1{
+    font-size: 38px;
+}
+.banner-para h2{
+    font-size: 28px;
+}
+.banner-text{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.banner-btn .cmn-btn{
+    padding: 12px 20px;
+}
+.banner-section{
+    padding: 150px 0 70px 0;
+}
+/*--------------------banner section ends---------------------*/
+
+/*--------------------about section starts---------------------*/
+.right-img{
+    position: relative;
+    width: 100%;
+}
+.left-about, .right-about{
+    width: 100%;
+}
+.left-about{
+    margin-bottom: 40px;
+}
+.inner-content{
+    text-align: center;
+}
+.inner-content h2{
+    font-size: 35px;
+}
+.inner-content p{
+    font-size: 13px;
+}
+.about-section{
+    padding: 50px 0;
+}
+/*--------------------about section ends---------------------*/
+/*--------------------service section starts---------------------*/
+
+.service-section-child{
+    justify-content: space-evenly;
+}
+.service-header h2{
+    font-size: 30px;
+}
+.card-one{
+    margin-bottom: 30px;
+}
+.service-section{
+    padding: 50px 0;
+}
+/*--------------------service section ends---------------------*/
+
+/*--------------------facility section starts---------------------*/
+.facility-section-child{
+    justify-content: center;
+}
+.facility-one{
+    margin-bottom: 30px;
+}
+/*--------------------facility section ends---------------------*/
+/*--------------------project section starts---------------------*/
+.project-section-child{
+    grid-template-columns: repeat(2, 1fr);
+}
+.project-header h2{
+    font-size: 30px;
+}
+.project-section{
+    padding: 50px 0;
+}
+/*--------------------project section ends---------------------*/
+/*--------------------team section starts---------------------*/
+.team-header h2{
+    font-size: 30px;
+}
+.team-header p{
+    font-size: 14px
+}
+.right-btn{
+    top: 240px;
+}
+.left-btn{
+    top: 240px;
+}
+.card-three{
+    max-width: 300px;
+}
+/*--------------------team section ends---------------------*/
+/*--------------------blog section starts---------------------*/
+.blog-section-child{
+    grid-template-columns: repeat(1,1fr);
+}
+.blog-header h2{
+    font-size: 30px;
+}
+.card-txt p{
+    font-size: 15px;
+}
+.blog-section{
+    padding: 50px 0;
+}
+.card-four-para{
+    height: 12%;
+}
+.card-btn i{
+    padding: 7px;
+}
+/*--------------------blog section ends---------------------*/
+/*--------------------review section starts---------------------*/
+.review-section{
+    padding: 50px 0;
+}
+.review-section-child{
+    padding: 0 100px;
+}
+.review-header h2{
+    font-size: 29px;
+}
+.review-header p{
+    font-size: 13px;
+}
+.review-section-child{
+    grid-template-columns: repeat(1, 1fr);
+}
+/*--------------------review section ends---------------------*/
+/*--------------------contact section starts---------------------*/
+.contact-section{
+    padding: 60px 0;
+}
+.contact-section-child{
+    flex-direction: column;
+    align-items: center;
+}
+.left-contact, .right-contact{
+    width: 80%;
+}
+.left-contact{
+    margin-bottom: 40px;
+}
+.contact-header h2{
+    font-size: 25px;
+}
+.contact-header h3{
+    font-size: 38px;
+}
+/*--------------------contact section ends-----------------------*/
+/*--------------------footer section starts---------------------*/
+.num-one, .num-two, .num-three, .num-four{
+    width: 100%;
+}
+.num-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section-child{
+    justify-content: space-between;
+    text-align: center;
+}
+.footer-section{
+    padding: 50px 0;
+}
+/*--------------------footer section ends-----------------------*/
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+/*--------------------nav bar starts---------------------*/
+#hambtn{
+    display: block;
+}
+.nav-links{
+    display: block;
+    position: absolute;
+    left:0;
+    top:-330px;
+    background: var(--royalblue);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ;
+}
+.nav-links a{
+    margin-bottom: 15px;
+    color: var(--white);
+    font-size: 16px;
+}
+.nav-btn{
+    display: block;
+    position: absolute;
+    left:0;
+    top:-330px;
+    background: var(--royalblue);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ;
+}
+.nav-btn a {
+    margin-bottom: 20px;
+}
+body.show-mobile-menu .nav-links{
+   top:70px;
+}
+body.show-mobile-menu .nav-btn{
+    top:336px;
+ } 
+/*--------------------nav bar ends----------------------*/
+/*--------------------banner section starts---------------------*/
+.banner-para h1{
+    font-size: 38px;
+}
+.banner-para h2{
+    font-size: 28px;
+}
+.banner-text{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.banner-btn .cmn-btn{
+    padding:12px 20px ;
+}
+.banner-section{
+    padding: 160px 0 70px 0;
+}
+/*--------------------banner section ends---------------------*/
+/*--------------------about section starts---------------------*/
+.right-img{
+    position: relative;
+    width: 100%;
+}
+.left-about, .right-about{
+    width: 100%;
+}
+.left-about{
+    margin-bottom: 40px;
+}
+.inner-content{
+    text-align: center;
+}
+/*--------------------about section ends---------------------*/
+
+/*--------------------service section starts---------------------*/
+
+.service-section-child{
+    justify-content: space-evenly;
+}
+.service-header h2{
+    font-size: 38px;
+}
+.card-one{
+    margin-bottom: 30px;
+}
+.service-section{
+    padding: 50px 0;
+}
+/*--------------------service section ends---------------------*/
+/*--------------------facility section starts---------------------*/
+.facility-one{
+    margin-bottom: 30px;
+}
+.facility-section-child{
+    justify-content: center;
+}
+/*--------------------facility section ends---------------------*/
+/*--------------------project section starts---------------------*/
+.project-section-child{
+    grid-template-columns: repeat(3, 1fr);
+}
+.project-header h2{
+    font-size: 35px;
+}
+.project-section{
+    padding: 50px 0;
+}
+/*--------------------project section ends---------------------*/
+/*--------------------team section starts---------------------*/
+.team-header h2{
+    font-size: 35px;
+}
+.team-header p{
+    font-size: 14px
+}
+.card-three{
+    max-width: 300px;
+}
+/*--------------------team section ends---------------------*/
+/*--------------------blog section starts----------------------*/
+.blog-header h2{
+    font-size: 40px;
+}
+.card-txt p{
+    font-size: 13px;
+}
+.card-txt h3{
+    font-size: 20px;
+}
+.card-btn i{
+    padding: 7px;
+}
+.card-four-para{
+    height: 18%;
+}
+/*--------------------blog section ends----------------------*/
+/*--------------------review section starts----------------------*/
+.review-section{
+    padding: 60px 0;
+}
+.review-header h2{
+    font-size: 35px;
+}
+.review-header p{
+    font-size: 15px;
+}
+.review-section-child{
+    grid-template-columns: repeat(2, 1fr);
+}
+/*--------------------review section ends----------------------*/
+/*--------------------contact section starts---------------------*/
+.contact-header h2{
+    font-size: 28px;
+}
+.contact-header h3{
+    font-size: 45px;
+}
+/*--------------------contact section ends-----------------------*/
+/*--------------------footer section starts---------------------*/
+.num-one, .num-two, .num-three, .num-four{
+    width: 50%;
+}
+.num-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section-child{
+    justify-content: space-between;
+    text-align: center;
+}
+.footer-section{
+    padding: 60px 0;
+}
+/*--------------------footer section ends-----------------------*/
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+/*--------------------nav bar starts---------------------*/
+#hambtn{
+    display: block;
+}
+.nav-links{
+    display: block;
+    position: absolute;
+    left:0;
+    top:-330px;
+    background: var(--royalblue);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ;
+}
+.nav-links a{
+    margin-bottom: 15px;
+    color: var(--white);
+    font-size: 16px;
+}
+.nav-btn{
+    display: block;
+    position: absolute;
+    left:0;
+    top:-330px;
+    background: var(--royalblue);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ;
+}
+.nav-btn a {
+    margin-bottom: 20px;
+}
+body.show-mobile-menu .nav-links{
+   top:70px;
+}
+body.show-mobile-menu .nav-btn{
+    top:336px;
+ } 
+/*--------------------nav bar ends----------------------*/
+/*--------------------banner section starts---------------------*/
+.banner-para h1{
+    font-size: 50px;
+}
+.banner-para h2{
+    font-size: 38px;
+}
+.banner-text{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.banner-section{
+    padding: 170px 0 70px 0;
+}
+/*--------------------banner section ends---------------------*/
+/*--------------------service section starts---------------------*/
+.service-section-child{
+    justify-content: space-evenly;
+}
+.service-header h2{
+    font-size: 38px;
+}
+.card-one{
+    margin-bottom: 30px;
+}
+.service-section{
+    padding: 60px 0;
+}
+/*--------------------service section ends---------------------*/
+/*--------------------facility section starts---------------------*/
+.facility-one{
+    max-width: 200px;
+}
+/*--------------------facility section ends---------------------*/
+/*--------------------project section starts---------------------*/
+.project-section-child{
+    grid-template-columns: repeat(4, 1fr);
+}
+.project-header h2{
+    font-size: 40px;
+}
+.project-section{
+    padding: 60px 0;
+}
+/*--------------------project section ends---------------------*/
+/*--------------------team section starts---------------------*/
+.team-header h2{
+    font-size: 38px;
+}
+/*--------------------team section ends----------------------*/
+/*--------------------blog section starts----------------------*/
+.blog-header h2{
+    font-size: 40px;
+}
+.blog-header p{
+    font-size: 15px;
+}
+/*--------------------blog section ends----------------------*/
+/*--------------------review section starts----------------------*/
+.review-section{
+    padding: 70px 0;
+}
+.review-header h2{
+    font-size: 40px;
+}
+.review-header p{
+    font-size: 15px;
+}
+/*--------------------review section ends----------------------*/
+/*--------------------footer section starts---------------------*/
+.num-one, .num-two, .num-three, .num-four{
+    width: 50%;
+}
+.num-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section-child{
+    justify-content: space-between;
+    text-align: center;
+}
+.footer-section{
+    padding: 60px 0;
+}
+/*--------------------footer section ends-----------------------*/
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

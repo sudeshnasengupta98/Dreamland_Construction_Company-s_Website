@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction_Company</title>
+    <!---------------------------font link-------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Grand+Hotel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!------------------font awesome link--------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!------------------css links----------------------->
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+
+<body>
+<!-------------------top header section starts----------------->
+<div class="top-header-section">
+    <ul class="contact-links">
+        <li><a href="tel:"><i class="fa-solid fa-phone"></i> 7001818956</a></li>
+        <li><a href="mailto:" class="active"><i class="fa-regular fa-envelope"></i> dreamland234@gmail.com</a></li>
+    </ul>
+</div>
+<!-------------------top header section ends------------------->
+<!-------------------nav bar starts------------------>
+<header class="header-section">
+<div class="container">
+    <nav class="nav">
+        <a href="index.html" class="logo">
+            <img src="./image/nav-logo.png" alt="logo-image">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="service.html">services</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="team.html">team</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html" id="first-links">contact us</a></li>
+        </ul>
+        <div class="nav-btn">
+          <a href="#contact" class="cmn-btn">get an appointment</a>
+        </div>
+    </nav>
+</div>
+</header>
+<!-------------------nav bar ends--------------------> 
+<main>
+ <!-------------------banner section starts-------------------->
+<section class="banner-section">
+  <div class="container">
+    <div class="banner-text">
+      <h1 class="heading-1">contact</h1>
+      <p>our Contact Us section is your gateway to turning your dream project into reality. Whether you need expert advice, a project consultation, or a custom quote, our team is ready to assist you. We prioritize clear communication, timely responses, and professional guidance for all your construction needs. Reach out to us via phone, email, or our online form, and we’ll get back to you promptly. Visit our office for a face-to-face discussion and explore how we can bring your vision to life. At Dreamland Construction, your satisfaction is our top priority!</p>
+      <a href="#contact" class="cmn-btn">learn more</a>
+    </div>
+  </div>
+</section> 
+<!-------------------banner section ends----------------------> 
+<!-------------------contact section starts----------------------> 
+<section class="contact-section com-gap" id="contact">
+  <div class="container">
+    <div class="contact-header">
+      <h2 class="heading-2">get in touch <span class="highlight"> with us</span></h2>
+    </div>
+    <div class="contact-child">
+      <div class="left-child">
+        <div class="inner-content">
+          <h3 class="heading-3">contact information</h3>
+          <p>fill up the form and our team will get back to you with in 24hours. call us everyday 8am - 7pm</p>
+          <ul class="address-links">
+            <li><a href="tel:"><i class="fa-solid fa-phone"></i> 7001818956</a></li>
+            <li><a href="mailto:" class="active"><i class="fa-regular fa-envelope"></i> dreamland234@gmail.com</a></li>
+            <li  id="active"><a href="#contact"><i class="fa-solid fa-location-dot"></i> 54 street,durgapur,india</i></a></li>
+        </ul>
+        </div>
+      </div>
+      <div class="right-child">
+           <form method="get" onsubmit="data(event) && alert('Data saved successfully')">
+            <input type="text" placeholder="Name" id="n1">
+            <input type="email" placeholder="Email" id="n2">
+            <input type="number" placeholder="Number" id="n3">
+            <label>What type of services do you want?</label>
+            <div class="radio-group" id="n4">
+                <input type="radio" name="service" checked> Commercial
+                <input type="radio" name="service"> Residential
+                <input type="radio" name="service"> Inquiries
+                <input type="radio" name="service"> Others
+            </div>
+            <textarea rows="7" placeholder="Message" id="n5"></textarea>
+            <input type="submit" placeholder="submit" id="n6">
+          </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-------------------contact section ends------------------------> 
+</main>
+
+<!-----------------footer section starts------------------------->
+<footer class="footer-section">
+  <div class="container">
+      <div class="footer-section-child">
+          <div class="footer-one num-one">
+             <a href="index.html" class="logo-one"><img src="./image/nav-logo.png" alt="footer-img"></a> 
+             <p>Dreamland Construction is committed to building excellence with quality, innovation, and precision. We transform visions into reality, creating lasting structures with unmatched craftsmanship.</p>
+             <ul class="social-links-one">
+              <li><a href="https://x.com/twitter?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>            
+          </div>
+          <div class="footer-one num-two">
+              <div class="footer-head">Quick Links</div>
+              <ul class="footer-links">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about us</a></li>
+                <li><a href="service.html">services</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="team.html">team</a></li>
+              </ul>
+          </div>
+          <div class="footer-one num-three">
+              <div class="footer-head">Usefull Links</div>
+              <ul class="footer-links">
+                  <li><a href="index.html">review</a></li>
+                  <li><a href="#contact">contact Us</a></li>
+                  <li><a href="#contact">privacy policy</a></li>
+                  <li><a href="#contact">refund policy</a></li>
+                  <li><a href="#contact">terms & conditions</a></li>
+              </ul>
+          </div>
+          <div class="footer-one num-four">
+              <div class="footer-head">Contact Details</div>
+                  <ul class="footer-links">
+                  <li><a href="index.html"><i class="fa-solid fa-location-dot"></i> 54 street,durgapur,india,</a></li>
+                  <li><a href="tel:"><i class="fa-solid fa-phone"></i> 7001818956</a></li>
+                  <li><a href="mailto:" id="active"><i class="fa-regular fa-envelope"></i> dreamland234@gmail.com</a></li> 
+              </ul>
+          </div>
+          
+      </div>
+  </div>
+</footer>
+<hr>
+  <!-----------------footer section ends--------------------------->
+  <!-----------------copyright section starts--------------------------->
+    <div class="bottom-footer">
+      <p>Copyright &copy; 2020 Bricks. All Rights Reserved.</p>
+  </div>
+  <!-----------------copyright section ends--------------------------->
+
+
+  <script>
+    function data(event){
+        var a=document.getElementById('n1').value;
+        var b=document.getElementById('n2').value;
+        var c=document.getElementById('n3').value;
+        var d=document.getElementById('n4').value;
+        var e=document.getElementById('n5').value;
+ 
+        if(a == "" || b == "" || c == "" || d == "" || e == ""){
+         alert("all field are mandatory");
+         event.preventDefault();
+         return false;
+        }
+        else if(c.length<10 || c.length>10){
+        alert("contact number should have 10 digits");
+         event.preventDefault();
+         return false;   
+        }
+        return true;
+    }
+    
+</script>
+
+</body>
+</html>
